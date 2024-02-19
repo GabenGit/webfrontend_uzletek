@@ -23,6 +23,11 @@ import Lenyilo_gabor from "./sajatosztalyok/Lenyilo_gabor"
 import Torles_uzlet from "./sajatosztalyok/Torles_uzlet"
 import Torles_varos from "./sajatosztalyok/Torles_varos"
 
+//-----------Tibi----------//
+import Diagram_film from "./sajatosztalyok/Diagram_film"
+import Torles_etelek from "./sajatosztalyok/Torles_etelek"
+import Torles_eteltipusok from "./sajatosztalyok/Torles_eteltipusok"
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -126,6 +131,28 @@ class App extends Component {
               </li>
             )}
 
+            {showAdminBoard && (
+              <li className="nav-item">
+                <Link to={"/Diagram_film"} className="nav-link">
+                  Diagram
+                </Link>
+              </li>
+            )}
+            {showAdminBoard && (
+              <li className="nav-item">
+                <Link to={"/Torles_etelek"} className="nav-link">
+                  Törlés ételek
+                </Link>
+              </li>
+            )}
+            {showAdminBoard && (
+              <li className="nav-item">
+                <Link to={"/Torles_eteltipusok"} className="nav-link">
+                  Törlés típusok
+                </Link>
+              </li>
+            )}
+
             {currentUser && (
               <li className="nav-item">
                 <Link to={"/user"} className="nav-link">
@@ -199,6 +226,11 @@ class App extends Component {
             <Route path="/Lenyilo_gabor" component={Lenyilo_gabor} />
             <Route path="/Torles_uzlet" component={Torles_uzlet} />
             <Route path="/Torles_varos" component={Torles_varos} />
+
+            {/*-------Tibi-------*/}
+            <Route path="/Diagram_film" component={Diagram_film} />
+            <Route path="/Torles_etelek" component={Torles_etelek} />
+            <Route path="/Torles_eteltipusok" component={Torles_eteltipusok} />
 
           </Switch>
         </div>
