@@ -27,6 +27,7 @@ import Torles_varos from "./sajatosztalyok/Torles_varos"
 import Diagram_film from "./sajatosztalyok/Diagram_film"
 import Torles_etelek from "./sajatosztalyok/Torles_etelek"
 import Torles_eteltipusok from "./sajatosztalyok/Torles_eteltipusok"
+import Diagram2 from "./sajatosztalyok/Diagram2"
 
 class App extends Component {
   constructor(props) {
@@ -140,6 +141,13 @@ class App extends Component {
             )}
             {showAdminBoard && (
               <li className="nav-item">
+                <Link to={"/Diagram2"} className="nav-link">
+                  Diagram típusok
+                </Link>
+              </li>
+            )}
+            {showAdminBoard && (
+              <li className="nav-item">
                 <Link to={"/Torles_etelek"} className="nav-link">
                   Törlés ételek
                 </Link>
@@ -231,6 +239,8 @@ class App extends Component {
             <Route path="/Diagram_film" component={Diagram_film} />
             <Route path="/Torles_etelek" component={Torles_etelek} />
             <Route path="/Torles_eteltipusok" component={Torles_eteltipusok} />
+            <Route path="/Diagram2" component={Diagram2} />
+
 
           </Switch>
         </div>
