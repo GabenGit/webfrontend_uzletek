@@ -13,7 +13,7 @@ const App = () => {
 
   const getMovies = async () => {
     try {
-      const response = await fetch(IP.ipcim +'uzlettipus');
+      const response = await fetch(IP.Ipcim +'uzlettipus');
       const json = await response.json();
       setData(json);
     } catch (error) {
@@ -28,7 +28,7 @@ const App = () => {
       "bevitel1":selectedSeged
   }
   try {
-      const response = await fetch(IP.ipcim+'keresuzlet',
+      const response = await fetch(IP.Ipcim+'keresuzlet',
       {
           method: "POST",
           body: JSON.stringify(adatok),
@@ -47,6 +47,7 @@ const App = () => {
 
   useEffect(() => {
     getMovies();
+    setSelectedSeged(1)
   }, []);
 
   return (
@@ -77,10 +78,10 @@ const App = () => {
           keyExtractor={({id}) => id}
           renderItem={({item}) => (
             <View>
-              <Text style={{fontWeight:'bold', fontSize:17, padding:7}}>
+              <Text style={{fontWeight:'bold', fontSize:25, padding:7,color:"cyan"}}>
                 {item.uzlet_nev}
               </Text>
-              <Text style={{fontStyle:'italic'}}>
+              <Text style={{fontStyle:'italic',fontSize:20,color:"white"}}>
                 {item.varos_nev} {item.uzlet_cim}
               </Text>
               </View>
