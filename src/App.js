@@ -160,6 +160,13 @@ class App extends Component {
                 </Link>
               </li>
             )}
+            {showAdminBoard && (
+              <li className="nav-item">
+                <Link to={"/Etelek2"} className="nav-link">
+                  Ételek
+                </Link>
+              </li>
+            )}
 
             {currentUser && (
               <li className="nav-item">
@@ -240,6 +247,8 @@ class App extends Component {
             <Route path="/Torles_etelek" component={Torles_etelek} />
             <Route path="/Torles_eteltipusok" component={Torles_eteltipusok} />
             <Route path="/Diagram2" component={Diagram2} />
+            
+
 
 
           </Switch>
