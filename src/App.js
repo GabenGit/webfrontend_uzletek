@@ -72,11 +72,11 @@ class App extends Component {
           </Link>
           <div className="navbar-nav mr-auto">
  
-            <li className="nav-item">
+            {/*<li className="nav-item">
               <Link to={"/Kereses"} className="nav-link">
                 Keresés
               </Link>
-            </li>
+            </li>*/}
 
             <li className="nav-item">
               <Link to={"/Proba"} className="nav-link">
@@ -108,13 +108,13 @@ class App extends Component {
               </li>
             )}
 
-            {showAdminBoard && (
+            {/*{showAdminBoard && (
               <li className="nav-item">
                 <Link to={"/probaAdmin"} className="nav-link">
                   PróbaAdmin
                 </Link>
               </li>
-            )}
+            )}*/}
 
             {showAdminBoard && (
               <li className="nav-item">
@@ -133,7 +133,7 @@ class App extends Component {
             )}
 
             {showAdminBoard && (
-              <li className="nav-item">
+               <li className="nav-item">
                 <Link to={"/Diagram_film"} className="nav-link">
                   Diagram
                 </Link>
@@ -228,9 +228,9 @@ class App extends Component {
             <Route path="/mod" component={BoardModerator} />
            
             <Route path="/Admin" component={Admin} />
-            <Route path="/Kereses" component={Kereses} />
+            {/*<Route path="/Kereses" component={Kereses} />*/}
             <Route path="/Proba" component={Proba} />
-            <Route path="/probaAdmin" component={probaAdmin} />
+            {/*<Route path="/probaAdmin" component={probaAdmin} />*/}
             <Route path="/Lenyilo_gabor" component={Lenyilo_gabor} />
             <Route path="/Torles_uzlet" component={Torles_uzlet} />
             <Route path="/Torles_varos" component={Torles_varos} />

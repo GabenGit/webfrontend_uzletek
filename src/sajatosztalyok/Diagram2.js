@@ -17,8 +17,8 @@ const App = () => {
         const json = await response.json();
         setData(json);
         for (let elem of json){
-          datCim.push(elem.etelek_nev)
-          dataDarabszam.push(elem.darabszam)
+          datCim.push(elem.eteltipusok_nev)
+          dataDarabszam.push(elem.etelek_szama)
         }
     } 
     catch (error) {
@@ -40,7 +40,7 @@ const App = () => {
         data={[
           {type: 'bar', x: datCim, y: dataDarabszam},
         ]}
-        layout={ {width: 700, height: 500, title: 'Szavazatok',} }
+        layout={ {width: 700, height: 500, title: 'Ételek darabszáma',} }
     />
 
       {/*{isLoading ? (
