@@ -63,7 +63,7 @@ const App = () => {
           keyExtractor={({uzlet_id}) => uzlet_id}
           renderItem={({item}) => (
             <View>
-            <Text style={{color:"black",fontWeight:"bold",fontSize:22,fontStyle:"italic"}}>
+            <Text style={{color:"white",fontWeight:"bold",fontSize:22,fontStyle:"italic"}}>
               {item.uzlet_nev} | {item.uzlet_cim}
             </Text>
 
@@ -71,7 +71,7 @@ const App = () => {
         style={styles.torlesgomb}
         onPress={async ()=>torles(item.uzlet_id)}
       >
-        <Text style={{color:"red",fontWeight:"bold",fontSize:15}}  >TÖRLÉS</Text>
+        <Text style={{color:"black",fontWeight:"bold",fontSize:15}}  >TÖRLÉS</Text>
       </TouchableOpacity>
 
             </View>
@@ -86,7 +86,7 @@ const styles = StyleSheet.create({
   
     torlesgomb: {
       alignItems: "center",
-      backgroundColor: "black",
+      backgroundColor: "cyan",
       padding: 10,
       width:70,
       marginLeft:"auto",
@@ -94,7 +94,7 @@ const styles = StyleSheet.create({
       borderRadius:10,
       border:"outset",
       borderRadius:100,
-      color:"grey"
+      color:"red"
       
     },
     keresgomb: {
