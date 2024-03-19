@@ -24,7 +24,7 @@ import Torles_uzlet from "./sajatosztalyok/Torles_uzlet"
 import Torles_varos from "./sajatosztalyok/Torles_varos"
 
 //-----------Tibi----------//
-import Diagram_film from "./sajatosztalyok/Diagram_film"
+import Diagram_film from "./sajatosztalyok/Diagram_etelek"
 import Torles_etelek from "./sajatosztalyok/Torles_etelek"
 import Torles_eteltipusok from "./sajatosztalyok/Torles_eteltipusok"
 import Diagram2 from "./sajatosztalyok/Diagram2"
