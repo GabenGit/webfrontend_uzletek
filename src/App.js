@@ -15,10 +15,10 @@ import BoardModerator from "./components/board-moderator.component";
 
 import { Nav, Navbar, NavDropdown } from "react-bootstrap";
 
-import Admin from './sajatosztalyok/Admin'
-import Kereses from "./sajatosztalyok/Kereses"
-import Proba from "./sajatosztalyok/Proba"
-import probaAdmin from "./sajatosztalyok/probaAdmin"
+
+
+
+
 import Lenyilo_gabor from "./sajatosztalyok/Lenyilo_gabor"
 import Torles_uzlet from "./sajatosztalyok/Torles_uzlet"
 import Torles_varos from "./sajatosztalyok/Torles_varos"
@@ -82,22 +82,14 @@ class App extends Component {
               </Link>
             </li>*/}
 
-            <li className="nav-item">
-              <Link to={"/Kereses"} className="nav-link">
-                Keresés
-              </Link>
-            </li>
+            
             <li className="nav-item">
               <Link to={"/Kereses2"} className="nav-link">
                 Keresés2
               </Link>
             </li>
 
-            <li className="nav-item">
-              <Link to={"/Proba"} className="nav-link">
-                Próba
-              </Link>
-            </li>
+            
 
             <li className="nav-item">
               <Link to={"/Lenyilo_gabor"} className="nav-link">
@@ -106,13 +98,7 @@ class App extends Component {
             </li>
                      
 
-            {showModeratorBoard && (
-              <li className="nav-item">
-                <Link to={"/mod"} className="nav-link">
-                  Moderator
-                </Link>
-              </li>
-            )}
+            
 
             {showAdminBoard && (
               <li className="nav-item">
@@ -123,13 +109,7 @@ class App extends Component {
             )}
 
 
-            {showAdminBoard && (
-              <li className="nav-item">
-                <Link to={"/Admin"} className="nav-link">
-                  Admin
-                </Link>
-              </li>
-            )}
+            
 
             {/*{showAdminBoard && (
               <li className="nav-item">
@@ -184,27 +164,11 @@ class App extends Component {
               </li>
             )}
 
-            {currentUser && (
-              <li className="nav-item">
-                <Link to={"/user"} className="nav-link">
-                  User
-                </Link>
-              </li>
-            )}
+            
           </div>
         
          
-          <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.2">
-              Another action
-            </NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-            <NavDropdown.Divider />
-            <NavDropdown.Item href="#action/3.4">
-              Separated link
-            </NavDropdown.Item>
-          </NavDropdown>
+          
         </Nav>
         <Nav>
         {currentUser ? (
@@ -247,12 +211,12 @@ class App extends Component {
             <Route exact path="/login" component={Login} />
             <Route exact path="/register" component={Register} />
             <Route exact path="/profile" component={Profile} />
-            <Route path="/user" component={BoardUser} />
-            <Route path="/mod" component={BoardModerator} />
            
-            <Route path="/Admin" component={Admin} />
+            
+           
+            
             {/*<Route path="/Kereses" component={Kereses} />*/}
-            <Route path="/Proba" component={Proba} />
+           
             {/*<Route path="/probaAdmin" component={probaAdmin} />*/}
             <Route path="/Lenyilo_gabor" component={Lenyilo_gabor} />
             <Route path="/Torles_uzlet" component={Torles_uzlet} />
