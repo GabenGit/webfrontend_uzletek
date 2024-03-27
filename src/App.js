@@ -23,6 +23,10 @@ import Lenyilo_gabor from "./sajatosztalyok/Lenyilo_gabor"
 import Torles_uzlet from "./sajatosztalyok/Torles_uzlet"
 import Torles_varos from "./sajatosztalyok/Torles_varos"
 
+//-----------Erik----------//
+import Kereses2 from "./sajatosztalyok/Kereses2"
+import Torles_komment from "./sajatosztalyok/Torles_komment"
+
 //-----------Tibi----------//
 import Diagram_film from "./sajatosztalyok/Diagram_etelek"
 import Torles_etelek from "./sajatosztalyok/Torles_etelek"
@@ -79,6 +83,17 @@ class App extends Component {
             </li>*/}
 
             <li className="nav-item">
+              <Link to={"/Kereses"} className="nav-link">
+                Keresés
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to={"/Kereses2"} className="nav-link">
+                Keresés2
+              </Link>
+            </li>
+
+            <li className="nav-item">
               <Link to={"/Proba"} className="nav-link">
                 Próba
               </Link>
@@ -95,6 +110,14 @@ class App extends Component {
               <li className="nav-item">
                 <Link to={"/mod"} className="nav-link">
                   Moderator
+                </Link>
+              </li>
+            )}
+
+            {showAdminBoard && (
+              <li className="nav-item">
+                <Link to={"/Torles_komment"} className="nav-link">
+                  Komment törlése
                 </Link>
               </li>
             )}
@@ -234,6 +257,10 @@ class App extends Component {
             <Route path="/Lenyilo_gabor" component={Lenyilo_gabor} />
             <Route path="/Torles_uzlet" component={Torles_uzlet} />
             <Route path="/Torles_varos" component={Torles_varos} />
+
+            {/*-------Erik-------*/}
+            <Route path="/Kereses2" component={Kereses2} />
+            <Route path="/Torles_komment" component={Torles_komment} />
 
             {/*-------Tibi-------*/}
             <Route path="/Diagram_film" component={Diagram_film} />
