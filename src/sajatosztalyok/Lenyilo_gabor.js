@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {ActivityIndicator, FlatList, Text, View, Button} from 'react-native';
+import {StyleSheet, ActivityIndicator, FlatList, Text, View, Button} from 'react-native';
 import {Picker} from '@react-native-picker/picker';
 
 const IP=require('./Ipcim')
@@ -91,5 +91,6 @@ const App = () => {
     </View>
   );
 };
+
 
 export default App;

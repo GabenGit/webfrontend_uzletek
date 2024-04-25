@@ -85,7 +85,7 @@ class App extends Component {
             
             <li className="nav-item">
               <Link to={"/Kereses2"} className="nav-link">
-                Keresés2
+                Keresés
               </Link>
             </li>
 
@@ -93,7 +93,7 @@ class App extends Component {
 
             <li className="nav-item">
               <Link to={"/Lenyilo_gabor"} className="nav-link">
-                Lenyíló
+                Kategória
               </Link>
             </li>
                      

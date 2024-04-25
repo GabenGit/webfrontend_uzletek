@@ -21,7 +21,7 @@ export default class FetchExample extends React.Component {
       bevitel1:szam
     }
 
-  fetch(IP.ipcim + "szavazatfelvitel", {
+  fetch(IP.Ipcim + "szavazatfelvitel", {
       method: "POST",
       body: JSON.stringify(bemenet),
       headers: {"Content-type": "application/json; charset=UTF-8"}
@@ -35,7 +35,7 @@ export default class FetchExample extends React.Component {
 
 
   componentDidMount(){
-    return fetch(IP.ipcim +  'film')
+    return fetch(IP.Ipcim +  'film')
       .then((response) => response.json())
       .then((responseJson) => {
 
@@ -58,7 +58,7 @@ export default class FetchExample extends React.Component {
       bevitel1:this.state.szo
     }
 
-  fetch(IP.ipcim + "keres", {
+  fetch(IP.Ipcim + "keres", {
       method: "POST",
       body: JSON.stringify(bemenet),
       headers: {"Content-type": "application/json; charset=UTF-8"}
@@ -109,7 +109,7 @@ export default class FetchExample extends React.Component {
 
           <View >
           <Text style={{color:"brown",fontSize:20,textAlign:"center",marginTop:15,marginBottom:5}}   >{item.film_cim} </Text>
-          <Image  source={{uri: IP.ipcim + item.film_kep}} style={{width:300,height:300,marginLeft:"auto",marginRight:"auto"}} />  
+          <Image  source={{uri: IP.Ipcim + item.film_kep}} style={{width:300,height:300,marginLeft:"auto",marginRight:"auto"}} />  
 
           <TouchableOpacity
         style={styles.kekgomb}
